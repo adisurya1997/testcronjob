@@ -53,7 +53,7 @@ def restarte():
 @app.get("/test")
 def test():
     url = "https://dev-bhagaskarash4zl.microgen.id/api/testcsv"
-    response = requests.post(url,json={"firstname":"1"}
+    response = requests.post(url,json={"firstname":"1"})
     return response.json()                         
                         
 
