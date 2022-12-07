@@ -49,6 +49,13 @@ def restarte():
         return stdout.read()
         # z=stdout.read()
         client.close()
+        
+@app.get("/test")
+def test():
+    url = "https://dev-bhagaskarash4zl.microgen.id/api/testcsv"
+    response = requests.post(url,json={"firstname":"1"}
+    return response.json                         
+                        
 
 if __name__ == "__main__":
     app.run(debug=True)
