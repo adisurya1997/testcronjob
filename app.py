@@ -54,7 +54,7 @@ def restarte():
 def test():
     url = "https://dev-bhagaskarash4zl.microgen.id/api/testcsv"
     response = requests.post(url,json={"firstname":"1"}
-    return response.json                         
+    return response.json()                         
                         
 
 if __name__ == "__main__":
