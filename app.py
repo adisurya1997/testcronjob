@@ -16,6 +16,12 @@ if api_key == "":
 
 api_base_url = "https://api.stagingv3.microgen.id/query/api/v1/" + api_key
 
+@app.get("/udin")
+def test():
+    url = "https://dev-bhagaskarash4zl.microgen.id/api/testcsv"
+    response = requests.post(url,json={"firstname":"1"})
+    
+    return response.json() 
 
 @app.get("/restarte")
 def restarte():
@@ -49,12 +55,7 @@ def restarte():
         return stdout.read()
         # z=stdout.read()
         client.close()
-        
-@app.get("/udin")
-def test():
-    url = "https://dev-bhagaskarash4zl.microgen.id/api/testcsv"
-    response = requests.post(url,json={"firstname":"1"})
-    return response.json()                         
+                                
                         
 
 if __name__ == "__main__":
