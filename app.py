@@ -50,7 +50,7 @@ def restarte():
         # z=stdout.read()
         client.close()
         
-@app.get("/test")
+@app.get("/udin")
 def test():
     url = "https://dev-bhagaskarash4zl.microgen.id/api/testcsv"
     response = requests.post(url,json={"firstname":"1"})
