@@ -25,7 +25,7 @@ def restarte():
         response = requests.get(url, auth=(username, password), timeout=(2))
         x = response.ok
         if x == True:
-            return("oke")
+            return("masih aman")
         else :
             return("last")
     except:
@@ -45,7 +45,7 @@ def restarte():
         #     my_dict = {}
         #     my_dict['Set-Cookie']= line
         #     xs = make_response(my_dict)
-        return stdout.read()
+        return ("udah di restart aman")
         # z=stdout.read()
         client.close()
                                 
