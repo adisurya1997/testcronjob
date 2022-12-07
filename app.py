@@ -16,7 +16,7 @@ if api_key == "":
 
 api_base_url = "https://api.stagingv3.microgen.id/query/api/v1/" + api_key
 
-@app.route('/')
+
 @app.get("/restarte")
 def restarte():
     try:
