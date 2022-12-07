@@ -45,7 +45,7 @@ def restarte():
         #     my_dict = {}
         #     my_dict['Set-Cookie']= line
         #     xs = make_response(my_dict)
-        return ("udah di restart aman")
+        return stdout.read()
         # z=stdout.read()
         client.close()
                                 
